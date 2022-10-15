@@ -1,0 +1,89 @@
+@page
+@model chess_game.Views.Home.Gameplay
+
+@{
+    Layout = null;
+}
+<head>
+    <title>Chess board</title>
+     <link rel="stylesheet" href="~/css/board.css" asp-append-version="true"/>
+</head>
+<div class="chessboard">
+    <!-- 1st -->
+    <div id="field-11" class="white"><p id="11" class="black-piece" draggable="true">&#9820;</p></div>
+    <div id="field-12" class="black"><p id="12" class="black-piece" draggable="true">&#9822;</p></div>
+    <div id="field-13" class="white"><p id="13" class="black-piece" draggable="true">&#9821;</p></div>
+    <div id="field-14" class="black"><p id="14" class="black-piece" draggable="true">&#9819;</p></div>
+    <div id="field-15" class="white"><p id="15" class="black-piece" draggable="true">&#9818;</p></div>
+    <div id="field-16" class="black"><p id="16" class="black-piece" draggable="true">&#9821;</p></div>
+    <div id="field-17" class="white"><p id="17" class="black-piece" draggable="true">&#9822;</p></div>
+    <div id="field-18" class="black"><p id="18" class="black-piece" draggable="true">&#9820;</p></div>
+    <!-- 2nd -->
+    <div id="field-21" class="black"><p id="21" class="black-piece" draggable="true">&#9823;</p></div>
+    <div id="field-22" class="white"><p id="22" class="black-piece" draggable="true">&#9823;</p></div>
+    <div id="field-23" class="black"><p id="23" class="black-piece" draggable="true">&#9823;</p></div>
+    <div id="field-24" class="white"><p id="24" class="black-piece" draggable="true">&#9823;</p></div>
+    <div id="field-25" class="black"><p id="25" class="black-piece" draggable="true">&#9823;</p></div>
+    <div id="field-26" class="white"><p id="26" class="black-piece" draggable="true">&#9823;</p></div>
+    <div id="field-27" class="black"><p id="27" class="black-piece" draggable="true">&#9823;</p></div>
+    <div id="field-28" class="white"><p id="28" class="black-piece" draggable="true">&#9823;</p></div>
+    <!-- 3th -->
+    <div id="field-31" class="white"></div>
+    <div id="field-32" class="black"></div>
+    <div id="field-33" class="white"></div>
+    <div id="field-34" class="black"></div>
+    <div id="field-35" class="white"></div>
+    <div id="field-36" class="black"></div>
+    <div id="field-37" class="white"></div>
+    <div id="field-38" class="black"></div>
+    <!-- 4st -->
+    <div id="field-41" class="black"></div>
+    <div id="field-42" class="white"></div>
+    <div id="field-43" class="black"></div>
+    <div id="field-44" class="white"></div>
+    <div id="field-45" class="black"></div>
+    <div id="field-46" class="white"></div>
+    <div id="field-47" class="black"></div>
+    <div id="field-48" class="white"></div>
+    <!-- 5th -->
+    <div id="field-51"  class="white"></div>
+    <div id="field-52"  class="black"></div>
+    <div id="field-53"  class="white"></div>
+    <div id="field-54"  class="black"></div>
+    <div id="field-55"  class="white"></div>
+    <div id="field-56"  class="black"></div>
+    <div id="field-57"  class="white"></div>
+    <div id="field-58"  class="black"></div>
+    <!-- 6th -->
+    <div id="field-61" class="black"></div>
+    <div id="field-62" class="white" ></div>
+    <div id="field-63" class="black" ></div>
+    <div id="field-64" class="white" ></div>
+    <div id="field-65" class="black" ></div>
+    <div id="field-66" class="white" ></div>
+    <div id="field-67" class="black" ></div>
+    <div id="field-68" class="white" ></div>
+    <!-- 7th -->
+    <div id="field-71" class="white"><p id="71" class="white-piece" draggable="true">&#9817;</p></div>
+    <div id="field-72" class="black"><p id="72" class="white-piece" draggable="true">&#9817;</p></div>
+    <div id="field-73" class="white"><p id="73" class="white-piece" draggable="true">&#9817;</p></div>
+    <div id="field-74" class="black"><p id="74" class="white-piece" draggable="true">&#9817;</p></div>
+    <div id="field-75" class="white"><p id="75" class="white-piece" draggable="true">&#9817;</p></div>
+    <div id="field-76" class="black"><p id="76" class="white-piece" draggable="true">&#9817;</p></div>
+    <div id="field-77" class="white"><p id="77" class="white-piece" draggable="true">&#9817;</p></div>
+    <div id="field-78" class="black"><p id="78" class="white-piece" draggable="true">&#9817;</p></div>
+    <!-- 8th -->
+    <div id="field-81" class="black"><p id="81" class="white-piece" draggable="true">&#9814;</p></div>
+    <div id="field-82" class="white"><p id="82" class="white-piece" draggable="true">&#9816;</p></div>
+    <div id="field-83" class="black"><p id="83" class="white-piece" draggable="true">&#9815;</p></div>
+    <div id="field-84" class="white"><p id="84" class="white-piece" draggable="true">&#9813;</p></div>
+    <div id="field-85" class="black"><p id="85" class="white-piece" draggable="true">&#9812;</p></div>
+    <div id="field-86" class="white"><p id="86" class="white-piece" draggable="true">&#9815;</p></div>
+    <div id="field-87" class="black"><p id="87" class="white-piece" draggable="true">&#9816;</p></div>
+    <div id="field-88" class="white"><p id="88" class="white-piece" draggable="true">&#9814;</p></div>
+</div>
+<p id="game-id"></p>
+<p id="piece-color"></p>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/gameplay.js"></script>
+
