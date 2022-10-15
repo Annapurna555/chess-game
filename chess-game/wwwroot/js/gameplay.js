@@ -55,7 +55,7 @@ chessFields.forEach(field =>{
     })
     field.addEventListener('drop', function handleClick(event){
         dragDrop(event)
-        connection.invoke("ControlMove", pieceIdDraggedByUser, fieldIdWhereUserDropThePiece).catch(function (err) {
+        connection.invoke("MakeMoveOnTheBoard", pieceIdDraggedByUser, fieldIdWhereUserDropThePiece).catch(function (err) {
             return console.error(err.toString());
         });
     })
