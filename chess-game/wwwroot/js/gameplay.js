@@ -18,6 +18,18 @@ connection.on("CreateGameplayId", function (gameId) {
     document.getElementById("game-id").appendChild(p);
 });
 
+connection.on("Block", ()=>{
+    document.querySelectorAll('.white-piece, .black-piece').forEach((elem) => {
+        elem.draggable = false;
+    })
+})
+
+connection.on("Unblock", ()=>{
+    document.querySelectorAll('.white-piece, .black-piece').forEach((elem) => {
+        elem.draggable = true;
+    })
+})
+
 connection.start().then(function () {
 
 }).catch(function (err) {
