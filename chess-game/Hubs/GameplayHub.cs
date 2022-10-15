@@ -7,7 +7,10 @@ public class GameplayHub : Hub
     private static List<string> _connectionsId = new List<string>();
     public async Task MakeMoveOnTheBoard(string pieceId, string fieldId, string gameplayId)
     {
+        
         await Clients.OthersInGroup(gameplayId).SendAsync("movePiece", pieceId, fieldId);
+        await Clients.OthersInGroup(gameplayId).SendAsync("Unblock");
+        await Clients.Caller.SendAsync("Block");
         
     }
     
